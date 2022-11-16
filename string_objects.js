@@ -6,7 +6,7 @@ data = {
     age: "23"
 }
 
-const fillTemplate = (s, m) => {
+const fillTemplate = ({ s, m }) => {
     dummy_s = s
     for (property in m)
     {
