@@ -80,47 +80,12 @@ std::vector<std::vector<int>> createMap()
 
 void populateObstacles(std::vector<std::vector<int>> &map)
 {
-    for (int i = 0; i < map.size(); i++)
-    {
-        for (int j = 0; j < map[i].size(); j++)
-        {
-            if (i == 2 && j == 3)
-            {
-                map[i][j] = Colors::black;
-                continue;
-            }
-
-            if (i == 3 && j == 3)
-            {
-                map[i][j] = Colors::black;
-                continue;
-            }
-
-            if (i == 4 && j == 3)
-            {
-                map[i][j] = Colors::black;
-                continue;
-            }
-
-            if (i == 2 && j == 4)
-            {
-                map[i][j] = Colors::black;
-                continue;
-            }
-
-            if (i == 3 && j == 4)
-            {
-                map[i][j] = Colors::black;
-                continue;
-            }
-
-            if (i == 4 && j == 4)
-            {
-                map[i][j] = Colors::black;
-                continue;
-            }
-        }
-    }
+    map[2][3] = Colors::black;
+    map[3][3] = Colors::black;
+    map[4][3] = Colors::black;
+    map[2][4] = Colors::black;
+    map[3][4] = Colors::black;
+    map[4][4] = Colors::black;
 }
 
 int main(void)
